@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+h1, h2, h3, h4, p {
+    margin: 10px 0px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+p, small {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 56px
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+small {
+    font-size: 12px;
+}
+
+select {
+    font-size: 14px;
+}

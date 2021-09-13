@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navLink" href="#">Home</a>
+            <a class="navLink active" href="#">Short Tasks</a>
+            <a class="navLink" href="#">Long Tasks</a>
+        </nav>
+    </header>
+    <main>
+        <div class="meta">
+            <select name="sort" id="sort">
+                <option value="progress">Fortschritt</option>
+                <option value="importance">Wichtigkeit</option>
+                <option value="old">Älteste</option>
+                <option value="new">Neuste</option>
+            </select>
+            <img class="add" src="../svg/plus.svg" onclick="myFunction();">
+            <!--
+
+            <a class="add">+</a>
+            -->
+        </div>
+        <div class="tasks">
+
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>Ausführliche Beschreibung des Tasks</p>
+                <div class="progress">
+                    <progress id="file" value="87" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>lsdh fah dslkjf hjklsdhfk hskd fhkjshd kfhlkdjsh fkjlhsdkf hjklsdh fjksdhkf hkjsdh lsdlk fjsdlajfli ölsjdeo fonrug hdsnf jkah gesfbkjdhs hckahaefhlkjdxch fldsh lkhfluihsd vnaehsrföiöa fhsdhf khs df hsd fkjhsdkj fhksdh</p>
+                <div class="progress">
+                    <progress id="file" value="12" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sdaf sdjökljiou n fudsfjhwherf kjhdslk hfkhsd kfh f</p>
+                <div class="progress">
+                    <progress id="file" value="63" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sd fds f</p>
+                <div class="progress">
+                    <progress id="file" value="8" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdaöf jlksdjfj alöksd fljsdl jflksdfl jlsdj fljljfjjöljsdfijelkjföiosdoj eiofiuhe  fhsiu</p>
+                <div class="progress">
+                    <progress id="file" value="96" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>Ausführliche Beschreibung des Tasks</p>
+                <div class="progress">
+                    <progress id="file" value="87" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>lsdh fah dslkjf hjklsdhfk hskd fhkjshd kfhlkdjsh fkjlhsdkf hjklsdh fjksdhkf hkjsdh lsdlk fjsdlajfli ölsjdeo fonrug hdsnf jkah gesfbkjdhs hckahaefhlkjdxch fldsh lkhfluihsd vnaehsrföiöa fhsdhf khs df hsd fkjhsdkj fhksdh</p>
+                <div class="progress">
+                    <progress id="file" value="12" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sdaf sdjökljiou n fudsfjhwherf kjhdslk hfkhsd kfh f</p>
+                <div class="progress">
+                    <progress id="file" value="63" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sd fds f</p>
+                <div class="progress">
+                    <progress id="file" value="8" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdaöf jlksdjfj alöksd fljsdl jflksdfl jlsdj fljljfjjöljsdfijelkjföiosdoj eiofiuhe  fhsiu</p>
+                <div class="progress">
+                    <progress id="file" value="96" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>Ausführliche Beschreibung des Tasks</p>
+                <div class="progress">
+                    <progress id="file" value="87" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>lsdh fah dslkjf hjklsdhfk hskd fhkjshd kfhlkdjsh fkjlhsdkf hjklsdh fjksdhkf hkjsdh lsdlk fjsdlajfli ölsjdeo fonrug hdsnf jkah gesfbkjdhs hckahaefhlkjdxch fldsh lkhfluihsd vnaehsrföiöa fhsdhf khs df hsd fkjhsdkj fhksdh</p>
+                <div class="progress">
+                    <progress id="file" value="12" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sdaf sdjökljiou n fudsfjhwherf kjhdslk hfkhsd kfh f</p>
+                <div class="progress">
+                    <progress id="file" value="63" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdf sd fds f</p>
+                <div class="progress">
+                    <progress id="file" value="8" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+            <div class="task">
+                <h3>Mein Task</h3>
+                <p>sdaöf jlksdjfj alöksd fljsdl jflksdfl jlsdj fljljfjjöljsdfijelkjföiosdoj eiofiuhe  fhsiu</p>
+                <div class="progress">
+                    <progress id="file" value="96" max="100"></progress>
+                    <img class="progressButton" src="../svg/plus.svg" onclick="myFunction();">
+                    <img class="progressButton" src="../svg/minus.svg" onclick="myFunction();">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="overlay" id="edit">
+            <div class="overlayCard">
+                <h1>skfjaösjdölfj</h1>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function myFunction() {
+            var authPopUp = document.getElementById("edit");
+            authPopUp.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == overlayCard) {
+                var authPopUp = document.getElementById("edit");
+                authPopUp.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
